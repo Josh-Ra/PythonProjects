@@ -257,12 +257,12 @@ def init_player(races):
             name = input(f"Enter the name of your {race}:\n>")
             player = Player(name, race, races[race], 5, [0, 50], 0, {})
             player.inventory = {
-                1: ["Wooden Sword", 1],
-                2: ["Wooden Shield", 1],
-                3: ["Spell Staff", 1],
-                4: ["Health Potion", 5],
-                5: ["Mana Potion", 5],
-                6: ["Gold", 100],
+                1: {"Wooden Sword": 1},
+                2: {"Wooden Shield": 1},
+                3: {"Spell Staff": 1},
+                4: {"Health Potion": 5},
+                5: {"Mana Potion": 5},
+                6: {"Gold": 100},
             }
             return player
         else:
